@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Production builds
+/dist
+/build
+/storybook-static
+
+# Development
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Testing
+/coverage
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Compiled CSS
+/stories/output.css

@@ -1,0 +1,25 @@
+# Root level environment files
+/.env
+/.env.*
+!/.env.example
+
+# Root level editor files
+/.idea/
+/.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Root level OS files
+.DS_Store
+Thumbs.db
+
+# Root level temporary files
+/.tmp/
+/.temp/
+
+# Docker volumes and data
+/docker-data/
+/volumes/
+
+# Root level logs
+/*.log 

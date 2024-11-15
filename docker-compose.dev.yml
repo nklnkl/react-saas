@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./app:/app
+    environment:
+      - NODE_ENV=development
+    tty: true
+    command: sh -c "npm install && npm start"
+  storybook:
+    build:
+      context: ./storybook
+      dockerfile: Dockerfile.dev
+    ports:
+      - "6006:6006"
+    volumes:
+      - ./storybook:/storybook
+    environment:
+      - NODE_ENV=development
+    tty: true
+    command: sh -c "npm install && npm run build:css && npm run storybook"
